@@ -1,6 +1,17 @@
+//plugins {
+//    id("com.android.application")
+//    id("org.jetbrains.kotlin.android")
+//}
+
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id 'kotlin-kapt'
+    id 'realm-android'
+}
+
+
+dependencies {
+    implementation 'io.realm:android-adapters:4.0.0'
+    //依存関係の指定を追加、バージョンは確認する
 }
 
 android {
